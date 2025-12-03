@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #faf6fc;
+    text-align: center;
+}
+
+/* ---------------- MENU ---------------- */
+
+.menu {
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.5);
+    z-index: 100;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: color 0.3s, letter-spacing 0.3s;
+}
+
+.menu a:hover {
+    color: #b43dfd;
+    letter-spacing: 2px;
+}
+
+.menu a.active {
+    color: #b43dfd;
+}
+
+/* ---------------- HERO ---------------- */
+
+.hero {
+    margin-top: 40px; 
+
+}
+
+.hero-img {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    position: relative;
+    margin-bottom: -65px;
+}
+
+.hero-img img.hero-default {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+/* Botón con icono */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #d878ff;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    transition: transform 0.3s ease, background-color 0.3s ease; 
+}
+
+.btn:hover {
+    transform: scale(1.05); 
+    background: #b43dfd; 
+}
+
+
+
+/* ---------------- CARDS ---------------- */
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 80px 0;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.8s, box-shadow 0.8s, background-color 0.8s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0  0px 25px rgba(0,0,0,0.2);
+    background-color: #f0e6fa;
+}
+
+/* Imagenes dentro de card */
+.img-box {
+    width: 100% ;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; 
+    position: absolute;
+    transition: opacity 0.8s;
+}
+
+.img-box .hover-img {
+    opacity: 0;
+}
+
+
+.card:hover .hover-img {
+    opacity: 1;
+}
+
+.card:hover .default-img {
+    opacity: 0;
+}
+
+.card h3 {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #444;
+    font-family: "Poppins", sans-serif;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Timing functions por card */
+.card.linear .img-box img {
+    transition-timing-function: linear;
+}
+
+.card.ease .img-box img {
+    transition-timing-function: ease;
+}
+
+.card.ease-in-out .img-box img {
+    transition-timing-function: ease-in-out;
+}

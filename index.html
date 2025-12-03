@@ -1,10 +1,73 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
-    <title>Transicions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transicions Suaus</title>
+    <link rel="stylesheet" href="estils.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
 </head>
 <body>
+
+    <header class="menu">
+        <nav>
+            <ul>
+                <li><a class="active" href="index.html">Inici</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="guia-estil.html">Guia d'estil</a></li>
+            </ul>
+        </nav>
+    </header>
     
+    <section class="hero">
+        <div class="hero-img">
+            <img src="assets/img/motos.jpeg" class="hero-default">
+        </div>
+
+        <h1>Transicions Suaus</h1>
+        <p>Tres transicions suaus</p>
+
+        <a class="btn"><span class="material-icons-outlined">play_arrow</span> començar</a>
+    </section>
+
+
+    <section class="cards">
+
+        <!-- CARD 1 -->
+        <div class="card linear">
+            <div class="img-box">
+                <img src="assets/img/moto.jpeg" class="default-img">
+                <img src="assets/img/moto2.jpeg" class="hover-img">
+            </div>
+
+            <h3>Linear Motion</h3>
+            <p>Moviment constant.</p>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="card ease">
+            <div class="img-box">
+                <img src="assets/img/moto1.jpeg" class="default-img">
+                <img src="assets/img/moto.jpeg" class="hover-img">
+            </div>
+
+            <h3>Ease Flow</h3>
+            <p>Acelera y luego desacelera.</p>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="card ease-in-out">
+            <div class="img-box">
+                <img src="assets/img/moto2.jpeg" class="default-img">
+                <img src="assets/img/moto1.jpeg" class="hover-img">
+            </div>
+
+            <h3>Bezier Shift</h3>
+            <p>comienza suave y termina suave.</p>
+        </div>
+
+    </section>
+
 </body>
 </html>
